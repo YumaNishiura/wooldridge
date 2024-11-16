@@ -11,3 +11,8 @@ dependencies = [
     "statsmodels>=0.14.4",
     "wooldridge>=0.4.5",
 ]
+
+[tool.uv]
+dev-dependencies = [
+    "rsconnect-python>=1.24.0",
+]
