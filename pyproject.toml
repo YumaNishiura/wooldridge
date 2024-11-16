@@ -5,5 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "seaborn>=0.13.2",
     "shiny>=1.1.0",
+    "stargazer>=0.0.7",
+    "statsmodels>=0.14.4",
+    "wooldridge>=0.4.5",
 ]
