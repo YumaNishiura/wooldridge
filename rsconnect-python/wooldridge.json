@@ -1,0 +1,12 @@
+{
+    "https://api.shinyapps.io": {
+        "server_url": "https://api.shinyapps.io",
+        "filename": "C:\\Users\\ynish\\OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\GitHub\\wooldridge",
+        "app_url": "https://yumanishiura.shinyapps.io/wooldridge/",
+        "app_id": 13383279,
+        "app_guid": null,
+        "title": "wooldridge",
+        "app_mode": "python-shiny",
+        "app_store_version": 1
+    }
+}
