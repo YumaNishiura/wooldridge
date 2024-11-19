@@ -1,9 +1,12 @@
 from io import StringIO
 import sys
+import re
 
 import pandas as pd
 import wooldridge
 import mdpd
+
+from type import Info 
 
 datasets = [
     "401k", "401ksubs", "admnrev", "affairs", "airfare",
@@ -42,8 +45,22 @@ def describe(name: str) -> str:
     return result.getvalue()
 
 
-def info(name: str) -> pd.DataFrame:
+def info(name: str) -> Info:
 
     desc = describe(name)
-    return mdpd.from_md(desc)
+    lst = re.split(r"\n\s*\n", desc)
 
+    # name, vars, obs
+    sdesc = lst[0].split("\n")
+    nvars = int(sdesc[1].split(": ")[1])
+    nobs = int(sdesc[2].split(": ")[1])
+
+    # data frame
+    vars = mdpd.from_md(lst[1])
+
+    # source
+    src = lst[2]
+
+    result = dict(name=name, nvars=nvars, nobs=nobs, src=src, vars=vars)
+
+    return result

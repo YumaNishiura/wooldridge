@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-shiny",
+    "entrypoint": "shiny.express.app:app_2e_py"
+  },
+  "python": {
+    "version": "3.11.10",
+    "package_manager": {
+      "name": "pip",
+      "version": "24.3.1",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "6f6d7c865cdb5b3b537674661a2c686e"
+    },
+    ".gitignore": {
+      "checksum": "03570f2a2e6c9b30996df2d6f93d5a0a"
+    },
+    ".python-version": {
+      "checksum": "c0479ff484dacd51dc5ba0461b16b9bf"
+    },
+    "README.md": {
+      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "app.py": {
+      "checksum": "562ef198edc29a7dc3896f6efaddbfad"
+    },
+    "include.py": {
+      "checksum": "725fd6e5e63850e86c342b2f81e5edb4"
+    },
+    "mainpanel.py": {
+      "checksum": "bd0e296f01fd4304823b1fc035946840"
+    },
+    "pyproject.toml": {
+      "checksum": "06e1bfdf546baae09b33bb3800b16738"
+    },
+    "static/readme.md": {
+      "checksum": "e65d55b870827a6111bf3da8b387bfed"
+    },
+    "type.py": {
+      "checksum": "572d0a2ec7112e743395744e19c6a736"
+    },
+    "uv.lock": {
+      "checksum": "72359c3ad58e2a746bcbb3e1cf65e646"
+    },
+    "woo.py": {
+      "checksum": "b6af1bfe7c9d2d82307a55c8c59ed6a0"
+    }
+  }
+}
